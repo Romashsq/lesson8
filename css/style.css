@@ -160,7 +160,7 @@ body {
   border-bottom: 1px solid #ececec;
   font-size: 14px;
   font-weight: 500;
-  margin: 94px;
+  margin: 0 0 94px;
 }
 .header-container {
   display: flex;
