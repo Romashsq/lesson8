@@ -221,73 +221,53 @@ body {
 .cards {
   margin: 40px 0;
   display: flex;
-  row-gap: 30px;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.card > div {
-  padding: 15px;
-  background: rgba(33, 150, 243, 0.9);
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  width: 370px;
-  height: 294px;
-}
-
-.card:hover > div {
-  opacity: 1;
-}
-
-.card-text {
-  color: #ffffff;
-}
-
 .card {
-  border: 1px solid #eee;
-  width: 370px;
-  height: 404px;
-  padding: 30px;
+  flex: 1 1 30%;
+}
+.card-image {
   position: relative;
 }
 
-.card-img {
+.card:hover .card-text {
+  opacity: 1;
+}
+
+.card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin: 0 0 10px;
 }
 
-.card-name {
-  font-family: var(--font-family);
-  font-weight: 700;
+.card-text {
+  position: absolute;
+  inset: 0;
+  background: #2196f3;
+  color: #fff;
+  padding: 24px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card-inner {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+.card-title {
   font-size: 18px;
-  line-height: 200%;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.card-name1 {
-  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 16px;
-  line-height: 200%;
-  letter-spacing: 0.06em;
-  color: #212121;
+  line-height: 36px;
+  letter-spacing: 1.08;
+  margin-bottom: 4px;
 }
-
-.card-desc {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.03em;
+.card-filter {
   color: #757575;
-  padding: 4px;
 }
 
 /* ? FOOTER */
